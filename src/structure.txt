@@ -1,0 +1,38 @@
+outdoer-frontend/
+├── public/
+│   ├── favicon.ico
+│   └── logo.svg
+├── src/
+│   ├── assets/
+│   │   └── logo.svg
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── ActivityCard.jsx
+│   │   ├── ExpeditionCard.jsx
+│   │   ├── MapView.jsx
+│   │   ├── UpcomingTrips.jsx
+│   │   └── WeatherWidget.jsx
+│   ├── pages/
+│   │   ├── Dashboard.jsx
+│   │   ├── Activities.jsx
+│   │   ├── Expeditions.jsx
+│   │   ├── Guides.jsx
+│   │   ├── Explorers.jsx
+│   │   └── Profile.jsx
+│   ├── styles/
+│   │   ├── variables.css
+│   │   ├── main.css
+│   │   ├── Dashboard.css
+│   │   └── Sidebar.css
+│   ├── utils/
+│   │   ├── api.js
+│   │   └── auth.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md

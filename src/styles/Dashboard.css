@@ -1,0 +1,250 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    margin-left: 280px;
+    overflow-y: auto;
+    background-color: var(--background);
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .dashboard-content {
+      margin-left: 0;
+    }
+  }
+  
+  .dashboard-main {
+    padding: var(--spacing-lg);
+  }
+  
+  /* Welcome Section */
+  .welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .welcome-text h1 {
+    font-size: var(--font-size-xxl);
+    color: var(--primary);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .welcome-text p {
+    color: var(--text-dark);
+    opacity: 0.8;
+  }
+  
+  .action-btns {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+  }
+  
+  .stat-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    transition: transform var(--transition-fast);
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--spacing-md);
+    font-size: var(--font-size-xl);
+  }
+  
+  .stat-content h3 {
+    font-size: var(--font-size-xl);
+    color: var(--primary);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .stat-content p {
+    color: var(--text-dark);
+    opacity: 0.7;
+    margin: 0;
+  }
+  
+  /* Dashboard Dual Section (Map and Upcoming Trips) */
+  .dashboard-dual-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  @media (max-width: 992px) {
+    .dashboard-dual-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .dashboard-map-section,
+  .dashboard-upcoming-section {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--box-shadow);
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .section-header h2 {
+    font-size: var(--font-size-lg);
+    color: var(--primary);
+    margin: 0;
+  }
+  
+  .text-link {
+    color: var(--secondary);
+    font-weight: 500;
+  }
+  
+  .text-link:hover {
+    text-decoration: underline;
+  }
+  
+  .map-container {
+    height: 300px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  
+  /* Featured Activities Section */
+  .featured-section {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  @media (max-width: 480px) {
+    .activities-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .activity-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-fast);
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .activity-image {
+    position: relative;
+    height: 200px;
+  }
+  
+  .activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .activity-category {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+  }
+  
+  .activity-content {
+    padding: var(--spacing-lg);
+  }
+  
+  .activity-content h3 {
+    font-size: var(--font-size-lg);
+    color: var(--primary);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .activity-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--text-dark);
+    opacity: 0.8;
+  }
+  
+  .detail svg {
+    margin-right: 4px;
+  }
+  
+  .activity-description {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--text-dark);
+    opacity: 0.8;
+  }
+  
+  .activity-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .activity-price {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--primary);
+  }
+  
+  .loading-message {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--text-dark);
+    opacity: 0.7;
+    grid-column: 1 / -1;
+  }
